@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'DS-Digital', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(27, 36, 74, 1);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.team {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#score-guest,
+#score-home,
+button {
+    font-family: 'DS-Digital', sans-serif;
+}
+
+#home-head,
+#guest-head {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 50px;
+    height: 40px;
+    color: grey;
+    cursor: pointer;
+}
+
+.score {
+    background-color: rgba(8, 0, 1, 1);
+    color: rgba(249, 79, 109, 1);
+    font-size: 150px;
+    margin: 10px 0px 20px 0px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .score {
+        font-size: 100px;
+    }
+
+    button {
+        width: 40px;
+        height: 30px; 
+    }
+
+    #home-head,
+    #guest-head {
+        font-size: 28px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .score {
+        font-size: 80px;
+    }
+
+    button {
+        width: 35px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    #home-head,
+    #guest-head {
+        font-size: 24px;
+    }
+}
